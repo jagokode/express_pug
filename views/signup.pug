@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title 
+    body 
+        if (message)
+            h4(style='color: red') #{message} 
+        h2 Sign Up
+        form(action='/signup' method='POST')
+            input(name='id' type='text' required placeholder='User ID')
+            input(name='password' type='password' required placeholder='Password')
+            button(type='submit') Sign Up
+        br 
+        br 
+        a(href=url) Go Home 

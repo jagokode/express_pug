@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title
+    body 
+        p.greetings#people Page 1
+        if (user)
+            h3 Hi, #{user.name}
+        else
+            a(href='/login') Login
+
+        h3 Views : #{pageViews}
+        a(href=url) Go Home

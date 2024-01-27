@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title 
+    body 
+        form(action='/new-form', method='POST')
+            div 
+                label(for='username') Username: 
+                input(name='username')
+            br 
+            div 
+                label(for='age') Age: 
+                input(name='age')
+            br 
+            div 
+                label(for='nationality') Nationality: 
+                input(name='nationality')
+            br 
+            button(type='submit') Add
+            br
+            br
+
+            a(href=url) Go Home

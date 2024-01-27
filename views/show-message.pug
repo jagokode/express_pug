@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Message | Tutorials Point 
+    body 
+        if (type === 'error') 
+            h3(style='color: red') #{msg} 
+        else 
+            if (!user)
+                h3 #{msg}
+            else 
+                h3 New User 
+                div 
+                    h5 Username : #{user.username} 
+                    h5 Age : #{user.age} 
+                    h5 Nationality : #{user.nationality}
